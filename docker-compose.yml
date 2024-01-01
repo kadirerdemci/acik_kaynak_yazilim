@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  web:
+    build: ./ders6
+    command: python3 odev.py -h 0.0.0.0
+    volumes:
+      - ./ders6/:/usr/src/app/
+    ports:
+      - 5001:5000
